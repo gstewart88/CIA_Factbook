@@ -7,8 +7,14 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<nav><h2>CIA Factbook - It's super legit you guys</h2></nav>
 <%= yield %>
+<nav class="bar">
+  <ul>
+    <li> <%= link_to('Countries', countries_path) %> </li>
+    <li> <%= link_to('New Country', new_country_path) %> </li>
+  </ul>
+</nav>
 
 </body>
 </html>
