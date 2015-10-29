@@ -1,5 +1,6 @@
 <% @countries.each do |country| %>
 <main class="container">
+
   <%= country.name %> has a population of <%= number_with_delimiter(country.population) %>.
   <%= link_to("Show #{country.name}", country_path(country)) %>
   <%= button_to('Delete Country', country_path(country), method: :delete, data:{confirm: 'Delete them? Are you sure?'}) %>
